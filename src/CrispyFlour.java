@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class CrispyFlour extends RawMaterial implements Discount {
+public class CrispyFlour extends RawMaterial implements Discount, Serializable {
     private int quantity;
 
     public CrispyFlour(String id, String name, LocalDate manufacturingDate, int cost, int quantity) {

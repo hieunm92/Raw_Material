@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Meat extends RawMaterial implements Discount {
+public class Meat extends RawMaterial implements Discount , Serializable {
     private double weight;
 
     public Meat(String id, String name, LocalDate manufacturingDate, int cost, double weight) {
